@@ -22,6 +22,8 @@ def get_model(model_name):
     """
     if model_name == "stable-diffusion-xl":
         pipeline = FKDStableDiffusionXL.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16)
+    elif model_name == "dreamshaper-7":
+        pipeline = FKDStableDiffusion.from_pretrained("Lykon/dreamshaper-7", torch_dtype=torch.float16)
     elif model_name == "stable-diffusion-v1-5":
         pipeline = FKDStableDiffusion.from_pretrained("runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16)
     elif model_name == "stable-diffusion-v1-4":
