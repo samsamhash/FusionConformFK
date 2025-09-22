@@ -1,5 +1,6 @@
 # FusionConformFK
 Fusion of Conform and Feynman-Kac (FK) steering and manipulation of latents. Base code is from https://github.com/zacharyhorvitz/Fk-Diffusion-Steering and https://github.com/gemlab-vt/CONFORM
+<br/>
 Repository with code of the three different cases to be tested in a free account in google colab, just exercute all the instalations cells first and then you can continue with the tests:
 - Fusion_Standar / Its the playground set to test the generation using Conform and Feynman-Kac steering.
 - Fusion_LCM / Its the version to test using Latent Consistency Models, dreamshaper-7 for faster generation.
@@ -10,7 +11,9 @@ If you get the following error:
 
 Please go to the following image and replace the line 31 with this: 
 "
+<br/>
 from transformers.modeling_utils import PreTrainedModel
+<br/>
 from transformers.pytorch_utils import apply_chunking_to_forward
 "
 <img width="975" height="162" alt="image" src="https://github.com/user-attachments/assets/4809c782-ca67-4bc3-baec-f777bd86b535" />
